@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .diaporama{
+            width: 500px;
+        }
+        .diaporama .miniature{
+            display: flex;
+        }
+        .diaporama .miniature img{
+            width: 20%;
+            border: solid white 2px;
+        }
+    </style>
 </head>
 <body>
     <h1>bonjour je découvre git</h1>
@@ -21,5 +33,15 @@
             <img src="http://source.unsplash.com/random/500x205" alt="">
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+
+    for(let i = 0 ; i < 5 ; i++){
+        $(".miniature img").eq(i).on("click", function(){
+            let urlImg = $(".miniature img").eq(i).attr("src");
+            $("header img").attr("src", urlImg);
+        })
+    }
+    </script>
 </body>
 </html>
