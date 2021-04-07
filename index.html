@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        header{
+            display: flex;
+        }
+        header ul{
+            width:200px;
+            transition: 0.7s transform;
+            transform : translateX(0px);
+            display:  flex;
+            list-style: none;
+            
+        }
+        header ul li{
+            margin-right: 20px;
+        }
+        header ul.glisser{
+            transform : translateX(-500px);
+        }
         .burger span{
             width:40px;
             height:5px;
@@ -30,18 +47,21 @@
 </head>
 <body>
     <h1>bonjour je découvre git</h1>
-    <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul>
-        <li>Lorem.</li>
-        <li>Facilis!</li>
-        <li>Quod!</li>
-        <li>Corporis?</li>
-        <li>Odit?</li>
-    </ul>
+    <header>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Lorem. </li>
+            <li>Facilis! </li>
+            <li>Quod! </li>
+            <li>Corporis? </li>
+            <li>Odit? </li>
+        </ul>
+    </header>
+    
     <div class="diaporama">
         <header>
             <img src="http://source.unsplash.com/random/500x200" alt="">
